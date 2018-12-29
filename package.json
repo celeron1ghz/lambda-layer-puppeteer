@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@serverless-chrome/lambda": "^1.0.0-55"
+  }
+}

@@ -1,0 +1,22 @@
+service: puppeteer
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: ap-northeast-1
+  deploymentBucket: serverless-upload-ap-northeast-1
+  versionFunctions: false
+
+package:
+  exclude:
+    - node_modules/@serverless-chrome/lambda/dist/**
+
+layers:
+  puppeteer:
+    path: node_modules/@serverless-chrome/lambda/dist
+    name: puppeteer
+    description: Contains chrome-headless binary
+
+#functions:
+#  hello:
+#    handler: handler.hello
