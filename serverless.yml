@@ -15,8 +15,8 @@ layers:
   puppeteer:
     path: node_modules/@serverless-chrome/lambda/dist
     name: puppeteer
-    description: Contains chrome-headless binary
-
-#functions:
-#  hello:
-#    handler: handler.hello
+    description: chrome-headless binary
+  japanese_font:
+    path: font
+    name: japanese_font
+    description: japanese font file (.ttc)
